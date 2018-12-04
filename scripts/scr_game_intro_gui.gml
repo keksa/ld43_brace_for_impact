@@ -4,18 +4,19 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_colour(c_yellow);
 
-var introText = "
-Captain, we've finished the scan.
-Results?
-...
-Oh my god! We need to let them know!
-Engage all engines, we only have two minutes.
-We should be able to make it. It's only couple of parsecs away.
-...
-Captain, long range sensors show we've been locked on by missiles.
-They know. Lieutenant, time to show your piloting skills.
-";
-draw_text_ext(80, 120 - 24, introText, 24, room_width - (80 * 2));
+// seems HTML5 cannot handle multiline text :(
+draw_text(80, 120 + 24 * 0,  "Captain, we've finished the scan.");
+draw_text(80, 120 + 24 * 1,  "Results?");
+draw_text(80, 120 + 24 * 2,  "...");
+draw_text(80, 120 + 24 * 3,  "Oh my god! We need to let them know!");
+draw_text(80, 120 + 24 * 4,  "Engage all engines, we only have two minutes.");
+draw_text(80, 120 + 24 * 5,  "We should be able to make it. It's only couple");
+draw_text(80, 120 + 24 * 6,  "of parsecs away.");
+draw_text(80, 120 + 24 * 7,  "...");
+draw_text(80, 120 + 24 * 8,  "Captain, long range sensors show we've been");
+draw_text(80, 120 + 24 * 9,  "locked on by missiles.");
+draw_text(80, 120 + 24 * 10, "They know. Lieutenant, time to show your");
+draw_text(80, 120 + 24 * 11, "piloting skills.");
 
 draw_set_font(f_mono_bold_16);
 draw_set_halign(fa_center);
